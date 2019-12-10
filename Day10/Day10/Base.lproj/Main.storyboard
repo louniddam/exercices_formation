@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Day10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Prénom" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aus-1u-OfS">
+                                <rect key="frame" x="38.5" y="188" width="337" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="159" translatesAutoresizingMaskIntoConstraints="NO" id="HjV-lb-Uvd">
+                                <rect key="frame" x="38" y="281" width="338.5" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsC-1S-rMI">
+                                        <rect key="frame" x="0.0" y="0.0" width="46.5" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fCU-gC-O9Z">
+                                        <rect key="frame" x="205.5" y="0.0" width="133" height="32"/>
+                                        <segments>
+                                            <segment title="Homme"/>
+                                            <segment title="Femme"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Créer un apprenant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jk-ZO-QaF">
+                                <rect key="frame" x="67" y="78" width="280" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TV9-do-vwU">
+                                <rect key="frame" x="63" y="412" width="288" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGD-mC-bOP">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="65"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Ajouter">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ajouter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cTH-u0-hrA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icq-dY-kQf">
+                                        <rect key="frame" x="0.0" y="85" width="288" height="65"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Afficher la liste des apprenants">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="liste:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e6V-UI-IRE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="fs8-5o-ZZ0"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2jk-ZO-QaF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3tO-Dj-rfC"/>
+                            <constraint firstItem="HjV-lb-Uvd" firstAttribute="top" secondItem="aus-1u-OfS" secondAttribute="bottom" constant="59" id="4px-XF-ocO"/>
+                            <constraint firstItem="HjV-lb-Uvd" firstAttribute="centerX" secondItem="aus-1u-OfS" secondAttribute="centerX" id="6N0-id-oUu"/>
+                            <constraint firstItem="2jk-ZO-QaF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="Bh6-Lg-Qb3"/>
+                            <constraint firstItem="TV9-do-vwU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Gso-K7-uQL"/>
+                            <constraint firstItem="TV9-do-vwU" firstAttribute="width" secondItem="HjV-lb-Uvd" secondAttribute="width" multiplier="0.85" id="HqH-ss-t9b"/>
+                            <constraint firstItem="aus-1u-OfS" firstAttribute="top" secondItem="2jk-ZO-QaF" secondAttribute="bottom" constant="69" id="Mob-f1-R2M"/>
+                            <constraint firstItem="HjV-lb-Uvd" firstAttribute="width" secondItem="aus-1u-OfS" secondAttribute="width" multiplier="1.00445" id="W2O-IJ-PYH"/>
+                            <constraint firstItem="aus-1u-OfS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ghv-Ir-c32"/>
+                            <constraint firstItem="aus-1u-OfS" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.81401" id="knx-dA-anZ"/>
+                            <constraint firstItem="TV9-do-vwU" firstAttribute="top" secondItem="HjV-lb-Uvd" secondAttribute="bottom" constant="100" id="n3e-ot-eLO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="genreSegmentedControl" destination="fCU-gC-O9Z" id="IDu-TD-bGU"/>
+                        <outlet property="prenomTextField" destination="aus-1u-OfS" id="NqS-R2-tFI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="51"/>
+        </scene>
+    </scenes>
+</document>
